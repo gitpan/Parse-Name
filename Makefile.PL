@@ -8,6 +8,6 @@ WriteMakefile(
     ABSTRACT     => '',
     PREREQ_PM    => {
                      'Test::Simple'	        => 0.44,
-		     'Class::Accessor::Chained' => ''
+		     'Class::Accessor::Chained' => '0'
                     },
 );

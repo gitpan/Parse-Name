@@ -8,5 +8,6 @@ t/001_load.t
 t/003_last_name_first_simple.t
 t/002_simple.t
 t/004_correct_caps_letters.t
+t/005_as_string.t
 Makefile.PL
 META.yml                                 Module meta-data (added by MakeMaker)

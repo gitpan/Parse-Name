@@ -5,7 +5,7 @@ use warnings;
 use base qw/ Class::Accessor::Chained /;
 __PACKAGE__->mk_accessors(qw/ fname mname lname /);
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 sub new {
 	my $class = shift;
@@ -45,11 +45,16 @@ sub mi {
 	$self->{mi};
 }
 
+sub as_string {
+	my $self = shift;
+	return join ' ',$self->fname,$self->mname,$self->lname;
+}
+
 ########################################### main pod documentation begin ##
 
 =head1 NAME
 
-Parse::Name - 
+Parse::Name - A simple parser for english names.
 
 =head1 SYNOPSIS
 
@@ -63,6 +68,39 @@ Parse::Name -
 
 This is a simple module for parsing string names into an object
 with methods that represent the parts of name.
+
+
+=head1 METHODS
+
+=over 4
+
+=item fname
+
+fname gets/sets the given name.
+
+=cut
+
+=item $self->mname
+
+mname gets/sets the middle name.
+
+=cut
+
+=item $self->mi
+
+mi returns the middle initial.
+
+=cut
+
+=item $self->lname
+
+lname gets/sets the last name.
+
+=cut
+
+=item $self->as_string
+
+returns the full name as "fname mname lname"
 
 =head1 AUTHOR
 
