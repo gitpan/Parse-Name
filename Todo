@@ -1,0 +1,6 @@
+TODO list for Perl module Parse::Name
+
+- Parse suffix and prefix.
+- Able to deal with more than one middle name.
+
+

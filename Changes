@@ -1,0 +1,10 @@
+Revision history for Perl module Parse::Name
+
+0.01 Thu Jan 20 11:53:15 2005
+	- original version; created by ExtUtils::ModuleMaker 0.32
+	- built test for the simple case.
+	- decided to use Class::Accessor::Chained.
+
+0.02 Thu Jan 20 1:30 2005
+	- add the ability to parse the form "lname, fname mname"
+	- add more tests.
